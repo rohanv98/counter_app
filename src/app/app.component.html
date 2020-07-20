@@ -1,1 +1,28 @@
-<h1>Yet to start this project</h1>
+<main>
+  <section class="counter-app">
+    <div class="dark-overlay">
+      <div class="title">
+        {{title}}
+      </div>
+      <div class="count">
+        {{count}}
+      </div>
+      <div class="d-flex justify-content-around mt-5">
+        <div class="b"> 
+          <button class="btn-1" (click)="increase()">++</button>
+        </div>
+        <div class="b">
+          <button class="btn-1" (click)="decrease()">--</button>
+        </div>
+        <div class="b">
+          <button class="btn-1" (click)="reset()">RESET</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="footer d-flex justify-content-start">
+    <div class="name">
+      ROHAN
+    </div>
+  </div>
+</main>
