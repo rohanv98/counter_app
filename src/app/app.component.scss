@@ -1,31 +1,32 @@
 @import 'variables';
 
-main{
+main {
     position: relative;
 }
-.counter-app{
-    background: map-get($map: $colors, $key:primary );
+
+.counter-app {
+    background: map-get($map: $colors, $key:primary);
     height: 100vh;
-    -webkit-clip-path: polygon(1% 15%, 100% 0, 100% 100%, 0 75%);
-clip-path: polygon(1% 15%, 100% 0, 100% 100%, 0 75%);
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 75%);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 75%);
 
     @include center();
 
-    .dark-overlay{
-        
-    padding-top: 100px;
+    .dark-overlay {
+
+        padding-top: 100px;
     }
 }
 
-.d-flex{
+.d-flex {
     // justify-content: center;
-    
 
-    button{
+
+    button {
         @extend .btn-1;
     }
 }
 
-.footer{
+.footer {
     @include footer();
 }
